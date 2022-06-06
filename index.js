@@ -137,7 +137,7 @@ app.get("/api/aircraft", (req, res) => {
     res.send(airVehicles)
 });
 
-app.get("/api/aircraft//model/:model", (req, res) => {
+app.get("/api/aircraft/model/:model", (req, res) => {
     const model = req.params.model;
 
     let aircraft = airVehicles.find(aircraft => {
