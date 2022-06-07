@@ -20,4 +20,4 @@
 
 - Improving my performance with node and express, getting better with sintax and the use of npm.
 
-- This is not an easy task but a task that you need to be focused and to practice a lot.
+- This is not an hard task but a task that you need to be focused and to practice a lot.
