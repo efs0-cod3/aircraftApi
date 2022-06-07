@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+}
+
+.aircraft{
+    border-radius: 50%;
+    width: 500px;
+}
+
+.code{
+    border-radius: 10px;
+}
+
+span{
+    font-weight: bold;
+}

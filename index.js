@@ -4,6 +4,8 @@ const cors = require('cors');
 const app = express()
 app.use(cors())
 
+app.use(express.static(__dirname));
+
 let airVehicles = [{
         model: "c172",
         maker: "Cessna",
@@ -124,13 +126,7 @@ let airVehicles = [{
 ]
 
 app.get("/", (req, res) => {
-    res.send(`
-    <h1>How to use:</h1>
-    <p>To get all the aircrafts request => "/api/aircraft" </p>
-    <p>To get aircraft by maker request w/ maker capitalize ex: Airbus => "/api/aircraft/maker/:maker" </p>
-    <p>To get aircraft & helicopter by model request ex:c172 => "/api/aircraft/model/:model" </p>
-    <p>To get all the helicopters request ex:passenger => "/api/hel/:type" </p>
-    `)  
+    res.sendFile(__dirname + '/' + 'index.html')  
 });
 
 app.get("/api/aircraft", (req, res) => {
