@@ -10,7 +10,6 @@
 
 - HTML
 - CSS
-- Js
 - Node
 - Express
 
